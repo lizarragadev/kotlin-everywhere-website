@@ -1,819 +1,1265 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="utf-8">
-   <title>Kotlin/Everywhere La Paz</title>
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Kotlin/Everywhere La Paz</title>
 
-   <meta name="description"
-      content="Kotlin Everywhere/La Paz es un evento mundial para dar a conocer lo mejor que tiene Kotlin para desarrolladores.">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description"
+         content="Kotlin Everywhere/La Paz es un evento mundial para dar a conocer lo mejor que tiene Kotlin para desarrolladores.">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   <!-- OG for Facebook -->
-   <meta property="og:title" content="Kotlin/Everywhere La Paz" />
-   <meta property="og:description"
-      content="Kotlin/Everywhere es un evento mundial para fomentar el uso y desarrollo del lenguaje Kotlin para distintos entornos de desarrollo." />
-   <meta property="og:type" content="website" />
-   <meta property="og:locale" content="es_BO" />
-   <meta property="og:locale:alternate" content="es_ES" />
-   <meta property="og:url" content="https://gdg.androidbolivia.com" />
-   <meta property="og:image" content="images/gdg/og_image.png" />
+      <!-- OG for Facebook -->
+      <meta property="og:title" content="Kotlin/Everywhere La Paz" />
+      <meta property="og:description"
+         content="Kotlin/Everywhere es un evento mundial para fomentar el uso y desarrollo del lenguaje Kotlin para distintos entornos de desarrollo." />
+      <meta property="og:type" content="website" />
+      <meta property="og:locale" content="es_BO" />
+      <meta property="og:locale:alternate" content="es_ES" />
+      <meta property="og:url" content="https://gdg.androidbolivia.com" />
+      <meta property="og:image" content="images/gdg/og_image.png" />
 
-   <!-- Twitter card -->
-   <meta name="twitter:card" content="summary_large_image"></meta>
-   <meta name="twitter:site" content="@gdgandroidbo" />
-   <meta name="twitter:author" content="@gdgandroidbo" />
+      <!-- Twitter card -->
+      <meta name="twitter:card" content="summary_large_image"></meta>
+      <meta name="twitter:site" content="@gdgandroidbo" />
+      <meta name="twitter:author" content="@gdgandroidbo" />
 
-   <!-- Favicons -->
-   <link href="images/favicon.ico" rel="icon">
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet" href="css/font-awesome.min.css">
-   <link rel="stylesheet" href="css/animate.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-   <link rel="stylesheet" href="css/owl.carousel.min.css">
-   <link rel="stylesheet" href="css/isotop.css">
-   <link rel="stylesheet" href="css/xsIcon.css">
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/responsive.css">
+      <!-- Favicons -->
+      <link href="images/favicon.ico" rel="icon">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" href="css/magnific-popup.css">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/isotop.css">
+      <link rel="stylesheet" href="css/xsIcon.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
 
-   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-   <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+         <![endif]-->
 
-</head>
+   </head>
 
-<body>
-   <div class="body-inner">
-      <header id="header" class="header header-classic">
-         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-               <a class="navbar-brand" href="index-2.html">
-                  <img src="images/gdg/LogoGDGABHorizontal.png" alt="GDG Android Bolivia" width="300px">
-               </a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav ml-auto">
-                     <li class="nav-item">
-                        <a href="#aboutit">About</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="#speakers">Speakers</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="#schedule">Schedule</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="#sponsors">Sponsors</a>
-                     </li>
-                     <li class="header-ticket nav-item">
-                        <a class="ticket-btn btn" href="#"
-                           target="_blank">Registration</a>
-                     </li>
-                  </ul>
+   <body>
+      <div class="body-inner">
+         <header id="header" class="header header-classic">
+            <div class="container">
+               <nav class="navbar navbar-expand-lg navbar-light">
+                  <a class="navbar-brand" href="index-2.html">
+                     <img src="images/gdg/LogoGDGABHorizontal.png" alt="GDG Android Bolivia" width="300px">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                           <a href="#aboutit">About</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#speakers">Speakers</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#schedule">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#sponsors">Sponsors</a>
+                        </li>
+                        <li class="header-ticket nav-item">
+                           <a class="ticket-btn btn" href="#"
+                              target="_blank">Registration</a>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </header>
+
+         <section class="hero-area centerd-item">
+            <div class="banner-item" style="background-image:url(images/gdg/hero.png)">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-8 mx-auto">
+                        <div class="banner-content-wrap text-center">
+
+                           <img src="images/gdg/logo-kotlin.png" alt="Kotlin Everywhere" class="img-fluid">
+
+                           <p class="banner-info">24 de Agosto 2019, Casa Municipal de la Cultura Franz Tamayo - Teatro Modesta Sanjinés, La Paz, Bolivia</p>
+
+                           <div class="countdown">
+                              <div class="counter-item">
+                                 <span class="days">00</span>
+                                 <div class="smalltext">Días</div>
+                              </div>
+                              <div class="counter-item">
+                                 <span class="hours">00</span>
+                                 <div class="smalltext">Horas</div>
+                              </div>
+                              <div class="counter-item">
+                                 <span class="minutes">00</span>
+                                 <div class="smalltext">Minutos</div>
+                              </div>
+                              <div class="counter-item">
+                                 <span class="seconds">00</span>
+                                 <div class="smalltext">Segundos</div>
+                              </div>
+                           </div>
+
+                           <div class="banner-btn">
+                              <a href="#" target="_blank"
+                                 class="btn">¡Quiero Asistir!</a>
+                           </div>
+
+                        </div>
+                     </div>
+
+                  </div>
                </div>
-            </nav>
-         </div>
-      </header>
+            </div>
+            <a id="aboutit"></a>
+         </section>
 
-      <section class="hero-area centerd-item">
-         <div class="banner-item" style="background-image:url(images/gdg/hero.png)">
+         <section class="ts-blog section-bg">
             <div class="container">
                <div class="row">
-                  <div class="col-lg-8 mx-auto">
-                     <div class="banner-content-wrap text-center">
+                  <div class="col-lg-12">
+                     <h2 class="section-title">
+                        <span>Acerca de</span>
+                        Kotlin/Everywhere
+                     </h2>
 
-                        <img src="images/gdg/logo-kotlin.png" alt="Kotlin Everywhere" class="img-fluid">
+                     <div class="row">
+                           <div class="col-lg-8 offset-lg-2">
 
-                        <p class="banner-info">24 de Agosto 2019, Cine 6 de Agosto, La Paz, Bolivia</p>
-
-                        <div class="countdown">
-                           <div class="counter-item">
-                              <span class="days">00</span>
-                              <div class="smalltext">Días</div>
+                              <p class="text-center">
+                                 <strong>Kotlin/Everywhere</strong> es una conferencia de una serie de eventos dirigidos por la comunidad, en colaboración con
+                                 <strong>JetBrains y Google</strong>, donde puede aprender lo esencial y las mejores prácticas de Kotlin en Android, Google Cloud Platform y el desarrollo multiplataforma, con speakers de talla internacional.
+                                 Este evento llega a <strong>La Paz</strong> este 24 de Agosto de la mano de <strong>GDG Android Bolivia</strong> y <strong>Kotlin La Paz</strong>.
+                                 Tendremos charlas, comida, regalos y la mejor dispocisión para aprender, separa tu cupo.
+                              </p>
                            </div>
-                           <div class="counter-item">
-                              <span class="hours">00</span>
-                              <div class="smalltext">Horas</div>
-                           </div>
-                           <div class="counter-item">
-                              <span class="minutes">00</span>
-                              <div class="smalltext">Minutos</div>
-                           </div>
-                           <div class="counter-item">
-                              <span class="seconds">00</span>
-                              <div class="smalltext">Segundos</div>
-                           </div>
-                        </div>
-
-                        <div class="banner-btn">
-                           <a href="#" target="_blank"
-                              class="btn">¡Quiero Asistir!</a>
-                        </div>
 
                      </div>
-                  </div>
 
+                  </div>
                </div>
             </div>
-         </div>
-         <a id="aboutit"></a>
-      </section>
+            <a id="speakers"></a>
+         </section>
 
-      <section class="ts-blog section-bg">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-12">
-                  <h2 class="section-title">
-                     <span>Acerca de</span>
-                     Kotlin/Everywhere
-                  </h2>
-
-                  <div class="row">
-                        <div class="col-lg-8 offset-lg-2">
-
-                           <p class="text-center">
-                              <strong>Kotlin/Everywhere</strong> es una serie de eventos dirigidos por la comunidad, en colaboración con
-                              JetBrains y Google, donde puede aprender lo esencial y las mejores prácticas de Kotlin en Android, Google Cloud Platform y el desarrollo multiplataforma, con speakers de talla internacional.
-                              Este evento llega a <strong>La Paz</strong> este 24 de Agosto de la mano de <strong>GDG Android Bolivia</strong> y <strong>Kotlin La Paz</strong>.
-                              Tendremos charlas, comida, regalos y la mejor dispocisión para aprender, separa tu cupo.
-                           </p>
-                        </div>
-
-                  </div>
-
-               </div>
-            </div>
-         </div>
-         <a id="speakers"></a>
-      </section>
-
-      <section id="ts-speakers" name="speakers" class="ts-speakers">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-8 mx-auto">
-                  <h2 class="section-title text-center">
-                     <span>Known</span>
-                     SPEAKERS
-                  </h2>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="row justify-content-center">
-                     <!-- SPEAKER 1 -->
-                     <div class="col-lg-3 col-md-6 wow" data-wow-duration="1.5s" data-wow-delay="400ms">
-                        <div class="ts-speaker">
-                           <div class="speaker-img">
-                              <img class="img-fluid" src="images/speakers/adrian.jpg" alt="">
-                              <a href="#popup_1" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
-                                          <i class="icon icon-plus"></i>
-                                      </a>
-                           </div>
-                           <div class="ts-speaker-info">
-                              <h3 class="ts-title"><a href="#">Adrián Catalán</a></h3>
-                              <p>
-                                 Google Developer Expert Android
-                              </p>
-                           </div>
-                        </div>
-
-                        <div id="popup_1" class="container ts-speaker-popup mfp-hide">
-                           <div class="row">
-                              <div class="col-lg-6">
-                                 <div class="ts-speaker-popup-img">
-                                    <img src="images/speakers/adrian.jpg" alt="">
-                                 </div>
-                              </div>
-                              <div class="col-lg-6">
-                                 <div class="ts-speaker-popup-content">
-                                    <h3 class="ts-title">Adrián Catalán</h3>
-                                    <span class="speakder-designation">Google Developer Expert Android</span>
-                                    <p>
-                                       Lorem ipsum dorom bla bla bla Lorem ipsum dorom bla bla bla Lorem ipsum dorom bla bla bla Lorem ipsum dorom bla bla bla Lorem ipsum dorom bla bla bla Lorem ipsum dorom bla bla bla Lorem ipsum dorom bla bla bla Lorem ipsum dorom bla bla bla Lorem ipsum dorom bla bla bla.
-                                    </p>
-                                    <!--AGENDA DE ANAHI-->
-                                    <h4 class="session-name">
-                                       Session by Adrián
-                                    </h4>
-                                    <div class="row">
-                                       <div class="col-lg-6">
-                                          <div class="speaker-session-info">
-                                             <h4>KOTLIN TALK</h4>
-                                             <span>
-                                                10.30 - 11.30 am
-                                             </span>
-                                             <p>
-                                                Kotlin Basics
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="ts-speakers-social">
-                                       <a href="https://www.facebook.com/anahi.salgado.diazdelavega"><i class="fa fa-facebook"></i></a>
-                                       <a href="https://twitter.com/anncode"><i class="fa fa-twitter"></i></a>
-                                       <a href="https://www.instagram.com/anncode/"><i class="fa fa-instagram"></i></a>
-                                       <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     
-                     <!-- SPEAKER 2 -->
-                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="500ms">
-                        <div class="ts-speaker">
-                           <div class="speaker-img">
-                              <img class="img-fluid" src="images/speakers/juan-guillermo-gomez.jpg" alt="">
-                              <a href="#popup_2"  class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
-                                          <i class="icon icon-plus"></i>
-                                      </a>
-                           </div>
-                           <div class="ts-speaker-info">
-                              <h3 class="ts-title"><a href="#">Juan Guillemo Gomez</a></h3>
-                              <p>
-                                 GDE Firebase
-                              </p>
-                           </div>
-                        </div>
-
-                        <div id="popup_2" class="container ts-speaker-popup mfp-hide">
-                           <div class="row">
-                              <div class="col-lg-6">
-                                 <div class="ts-speaker-popup-img">
-                                    <img src="images/speakers/juan-guillermo-gomez.jpg" alt="">
-                                 </div>
-                              </div>
-                              <div class="col-lg-6">
-                                 <div class="ts-speaker-popup-content">
-                                    <h3 class="ts-title">Juan Guillermo Gomez</h3>
-                                    <span class="speakder-designation">Lead GDG Cali</span>
-                                    <p>
-                                       Experiencia en desarrollo y arquitectura de software por mas de 12 años. Últimamente desarrolla backends usando GCP y Firebase y desarrollo de apps en Android. Co-fundador y co-líder del GDG Cali, líder de tecnología en progressus. Speaker internacional y nacional.
-                                    </p>
-                                    <div class="ts-speakers-social">
-                                       <a href="https://www.facebook.com/jggomez84"><i class="fa fa-facebook"></i></a>
-                                       <a href="https://twitter.com/jggomezt"><i class="fa fa-twitter"></i></a>
-                                       <a href="https://www.instagram.com/jggomezt/"><i class="fa fa-instagram"></i></a>
-                                       <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     
-                     <!-- SPEAKER 3 -->
-                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="600ms">
-                        <div class="ts-speaker">
-                           <div class="speaker-img">
-                              <img class="img-fluid" src="images/speakers/cristian-gomez.jpg" alt="Cristian Gómez">
-                              <a href="#popup_3" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
-                                          <i class="icon icon-plus"></i>
-                                      </a>
-                           </div>
-                           <div class="ts-speaker-info">
-                              <h3 class="ts-title"><a href="#">Cristian Gómez</a></h3>
-                              <p>
-                                 GDE Android
-                              </p>
-                           </div>
-                        </div>
-
-                        <div id="popup_3" class="container ts-speaker-popup mfp-hide">
-                           <div class="row">
-                              <div class="col-lg-6">
-                                 <div class="ts-speaker-popup-img">
-                                    <img src="images/speakers/cristian-gomez.png" alt="Cristian Gómez">
-                                 </div>
-                              </div>
-                              <div class="col-lg-6">
-                                 <div class="ts-speaker-popup-content">
-                                    <h3 class="ts-title">Cristian Gómez</h3>
-                                    <span class="speakder-designation">GDE Android</span>
-                                    <p>
-                                       Es desarrollador de software, actualmente enfocado en el desarrollo para apps y librerías. Activo en las comunidades Android de Colombia, principalmente como co-organizador y charlista en @MedellinAndroid, un grupo de desarrolladores profesionales en "La ciudad de la eterna primavera". Co-organizador de Droids4Droids, conferencia especializada para desarrolladores Android, Charlista de conferencias como Droidcon (Polonia, Santo Domingo). En su tiempo libre disfruta de la fotografía y tocar la guitarra.
-                                    </p>
-                                    <div class="ts-speakers-social">
-                                       <a href="#"><i class="fa fa-facebook"></i></a>
-                                       <a href="https://twitter.com/Iyubinest" target="_blank"><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  
-                  <!-- SPEAKER 5 -->
-                  <div class="row justify-content-center">
-                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="800ms">
-                        <div class="ts-speaker">
-                           <div class="speaker-img">
-                              <img class="img-fluid" src="images/speakers/carlos-daniel-munoz.jpg" alt="">
-                              <a href="#popup_5" class="view-speaker  ts-image-popup" data-effect="mfp-zoom-in">
-                                          <i class="icon icon-plus"></i>
-                                      </a>
-                           </div>
-                           <div class="ts-speaker-info">
-                              <h3 class="ts-title"><a href="#">Carlos Daniel Muñoz </a></h3>
-                              <p>
-                                 GDE Android
-                              </p>
-                           </div>
-                        </div>
-
-                        <div id="popup_5" class="container ts-speaker-popup mfp-hide">
-                           <div class="row">
-                              <div class="col-lg-6">
-                                 <div class="ts-speaker-popup-img">
-                                    <img src="images/speakers/carlos-daniel-munoz.jpg" alt="">
-                                 </div>
-                              </div>
-                              <div class="col-lg-6">
-                                 <div class="ts-speaker-popup-content">
-                                    <h3 class="ts-title">Carlos Daniel Muñoz</h3>
-                                    <span class="speakder-designation">Lead Android Developer at Webcat LLC</span>
-                                    <p>
-                                       Co-Lider de la comunidad de desarrollo Android en Medellín. Co-organizador de Droids4Droids Colombia, conferencia especializada para desarrolladores Android. Amante del buen performances de las apps.
-                                    </p>
-                                    <div class="ts-speakers-social">
-                                       <a href="https://twitter.com/cdmunozi"><i class="fa fa-twitter"></i></a>
-                                       <a href="https://www.linkedin.com/in/carlosdanielmunozidarraga/"><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="900ms">
-                        <div class="ts-speaker">
-                           <div class="speaker-img">
-                              <img class="img-fluid" src="images/speakers/yuri-camacho.jpg" alt="">
-                              <a href="#popup_6" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
-                                          <i class="icon icon-plus"></i>
-                                      </a>
-                           </div>
-                           <div class="ts-speaker-info">
-                              <h3 class="ts-title"><a href="#">Yury Camacho </a></h3>
-                              <p>
-                                 GDE Android
-                              </p>
-                           </div>
-                        </div>
-
-                        <div id="popup_6" class="container ts-speaker-popup mfp-hide">
-                           <div class="row">
-                              <div class="col-lg-6">
-                                 <div class="ts-speaker-popup-img">
-                                    <img src="images/speakers/yuri-camacho.jpg" alt="">
-                                 </div>
-                              </div>
-                              <div class="col-lg-6">
-                                 <div class="ts-speaker-popup-content">
-                                    <h3 class="ts-title">Yuri Camacho</h3>
-                                    <span class="speakder-designation">GDE Android</span>
-                                    <p>
-                                       Experienced Mobile Application Developer with a demonstrated history of working in the internet industry. Skilled in Android development, Mobile architectures, Kotlin, Flutter, Google Cloud Platform, Mobile Applications. International speaker with more than 30 talks about Mobile development
-                                    </p>
-
-                                    <!-- <h4 class="session-name">
-                                       Sessions by David
-                                    </h4>
-                                    <div class="row">
-                                       <div class="col-lg-6">
-                                          <div class="speaker-session-info">
-                                             <h4>Day 1</h4>
-                                             <span>10.30 - 11.30 am</span>
-                                             <p>
-                                                Marketing Matters
-                                             </p>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-6">
-                                          <div class="speaker-session-info">
-                                             <h4>Day 1</h4>
-                                             <span>10.30 - 11.30 am</span>
-                                             <p>
-                                                Marketing Matters
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div> -->
-                                    <div class="ts-speakers-social">
-                                       <a href="https://www.facebook.com/camachoyury"><i class="fa fa-facebook"></i></a>
-                                       <a href="https://twitter.com/camachoyury" target="_blank"><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-
-                     </div>
-                  </div>
-               </div>
-         </div>
-         <a id="schedule"></a>
-      </section>
-      <!-- ts speaker end-->
-
-      <section class="ts-schedule">
+         <section id="ts-speakers" name="speakers" class="ts-speakers">
             <div class="container">
                <div class="row">
                   <div class="col-lg-8 mx-auto">
                      <h2 class="section-title text-center">
-                        <span>Prográmate</span>
-                        Agenda
+                        <span>Conócelos</span>
+                        SPEAKERS
                      </h2>
-                     <div class="ts-schedule-nav">
-                        <ul class="nav nav-tabs justify-content-center" role="tablist">
-                           <li class="nav-item">
-                              <a class="active" title="Click Me" href="#date1" role="tab" data-toggle="tab">
-                                 <h3>KOTLIN TALKS</h3>
-                                 <span>Main Room</span>
-                                 </a>
-                           </li>
-                        </ul>
-                        <!-- Tab panes -->
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="row justify-content-center"> <!-- Inicio fila -->
+                        <!-- SPEAKER 1 -->
+                        <div class="col-lg-3 col-md-6 wow" data-wow-duration="1.5s" data-wow-delay="400ms">
+                           <div class="ts-speaker">
+                              <div class="speaker-img">
+                                 <img class="img-fluid" src="images/speakers/CristianGomez.png" alt="">
+                                    <a href="#popup_1" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                       <i class="icon icon-plus"></i>
+                                    </a>
+                              </div>
+                              <div class="ts-speaker-info">
+                                 <h3 class="ts-title">
+                                    <a href="#">
+                                       Cristian Gómez
+                                    </a>
+                                 </h3>
+                                 <img src="https://lipis.github.io/flag-icon-css/flags/4x3/co.svg" style="width: 20px; margin-bottom: 10px;">
+                                 <p>
+                                    Matter Supply </br> Google Developer Expert Android
+                                 </p>
+                              </div>
+                           </div>
+
+                           <div id="popup_1" class="container ts-speaker-popup mfp-hide">
+                              <div class="row">
+                                 <div class="col-lg-6">
+                                    <div class="ts-speaker-popup-img">
+                                       <img src="images/speakers/CristianGomez.png" alt="">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <div class="ts-speaker-popup-content">
+                                       <h3 class="ts-title">
+                                          Cristian Gómez
+                                          <img src="https://lipis.github.io/flag-icon-css/flags/4x3/co.svg" style="width: 20px; margin-left: 15px; margin-bottom: 5px">
+                                       </h3>
+                                       <span class="speakder-designation" style="color: #69D6F7; font-size: 18px">
+                                          <b>
+                                             Matter Supply | Google Developer Expert Android
+                                          </b>
+                                       </span>
+                                       <p class="speakder-designation">
+                                          Cristian es desarrollador de software. Activo en las comunidades Android de Colombia, principalmente como co-organizador y charlista en @MedellinAndroid.
+                                       </p>
+                                       <!--AGENDA DE EXPOSITOR-->
+                                       <span class="speaker-session-info">
+                                          <h5 style="margin-top: 30px">
+                                             Kotlin Talk: 
+                                          </h5>
+                                          <p>
+                                             <b>
+                                                FP para no-Batos
+                                             </b>
+                                          </p>
+                                       </span>
+                                       <p class="speakder-designation">
+                                          La programación funcional la vivimos día a día, ahora que tal si la combinamos con estrategias para aprovecharla de una manera mas inteligente. En esta charla veremos el uso de tipos, funciones y estructuras que nos permitirán elaborar un caso de uso completo, todo usando Kotlin!
+                                       </p>
+                                       <span class="speaker-session-info">
+                                          <h5 style="margin-top: 30px">Hour: </h5>
+                                             <p>
+                                                <b>
+                                                   10:00 - 10:30
+                                                </b>
+                                             </p>
+                                       </span>
+                                       <div class="ts-speakers-social" style="margin-top: 40px">
+                                          <a href="https://www.github.com/iyubinest" target="_blank">
+                                             <i class="fa fa-github"></i>
+                                          </a>
+                                          <a href="https://www.facebook.com/iyubinest" target="_blank">
+                                             <i class="fa fa-facebook"></i>
+                                          </a>
+                                          <a href="https://twitter.com/iyubinest" target="_blank">
+                                             <i class="fa fa-twitter"></i>
+                                          </a>                     
+                                          <a href="https://www.instagram.com/cristian.code" target="_blank">
+                                             <i class="fa fa-instagram"></i>
+                                          </a>
+                                          <a href="http://linkedin.com/in/iyubinest/" target="_blank">
+                                             <i class="fa fa-linkedin"></i>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- SPEAKER 2 -->
+                        <div class="col-lg-3 col-md-6 wow" data-wow-duration="1.5s" data-wow-delay="400ms">
+                           <div class="ts-speaker">
+                              <div class="speaker-img">
+                                 <img class="img-fluid" src="images/speakers/BrianCastillo.jpg" alt="">
+                                    <a href="#popup_2" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                       <i class="icon icon-plus"></i>
+                                    </a>
+                              </div>
+                              <div class="ts-speaker-info">
+                                 <h3 class="ts-title">
+                                    <a href="#">
+                                       Brian Castillo
+                                    </a>
+                                 </h3>
+                                 <img src="https://lipis.github.io/flag-icon-css/flags/4x3/pe.svg" style="width: 20px; margin-bottom: 10px;">
+                                 <p>
+                                    Wibo</br>Google Developer Expert Firebase
+                                 </p>
+                              </div>
+                           </div>
+
+                           <div id="popup_2" class="container ts-speaker-popup mfp-hide">
+                              <div class="row">
+                                 <div class="col-lg-6">
+                                    <div class="ts-speaker-popup-img">
+                                       <img src="images/speakers/BrianCastillo.jpg" alt="">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <div class="ts-speaker-popup-content">
+                                       <h3 class="ts-title">
+                                          Brian Castillo
+                                          <img src="https://lipis.github.io/flag-icon-css/flags/4x3/pe.svg" style="width: 20px; margin-left: 15px; margin-bottom: 5px">
+                                       </h3>
+                                       <span class="speakder-designation" style="color: #69D6F7; font-size: 18px">
+                                          <b>
+                                             Wibo | Google Developer Expert Firebase
+                                          </b>
+                                       </span>
+                                       <p class="speakder-designation">
+                                          Brian es Google Developer Expert en Firebase y CTO en Wibo. Geek que le gusta los superheroes, ama la pasta y le encanta amanecer programando.
+                                          Para este momento por mis venas corre más cafeína que sangre.
+                                       </p>
+                                       <!--AGENDA DE EXPOSITOR-->
+                                       <span class="speaker-session-info">
+                                          <h5 style="margin-top: 30px">
+                                             Kotlin Talk: 
+                                          </h5>
+                                          <p>
+                                             <b>
+                                                Firebase Functions with Kotlin Native
+                                             </b>
+                                          </p>
+                                       </span>
+                                       <p class="speakder-designation">
+                                          Firebase functions works very well. Kotlin is beautiful. What would happen if we put both together?
+                                       </p>
+                                       <span class="speaker-session-info">
+                                          <h5 style="margin-top: 30px">Hour: </h5>
+                                             <p>
+                                                <b>
+                                                   10:00 - 10:30
+                                                </b>
+                                             </p>
+                                       </span>
+                                       <div class="ts-speakers-social" style="margin-top: 40px">
+                                          <a href="https://www.github.com/briansalvattore" target="_blank">
+                                             <i class="fa fa-github"></i>
+                                          </a>
+                                          <a href="https://www.facebook.com/briansalvattore" target="_blank">
+                                             <i class="fa fa-facebook"></i>
+                                          </a>
+                                             <a href="https://twitter.com/briansalvattore" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                             </a>
+                                             <a href="https://www.linkedin.com/in/briansalvattore" target="_blank">
+                                                <i class="fa fa-linkedin"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- SPEAKER 3 -->
+                        <div class="col-lg-3 col-md-6 wow" data-wow-duration="1.5s" data-wow-delay="400ms">
+                           <div class="ts-speaker">
+                              <div class="speaker-img">
+                                 <img class="img-fluid" src="images/speakers/YuryCamacho.jpg" alt="">
+                                    <a href="#popup_3" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                       <i class="icon icon-plus"></i>
+                                    </a>
+                              </div>
+                              <div class="ts-speaker-info">
+                                 <h3 class="ts-title">
+                                    <a href="#">
+                                       Yury Camacho
+                                    </a>
+                                 </h3>
+                                 <img src="https://lipis.github.io/flag-icon-css/flags/4x3/bo.svg" style="width: 20px; margin-bottom: 10px;"><img src="https://lipis.github.io/flag-icon-css/flags/4x3/ar.svg" style="width: 20px; margin-bottom: 10px; margin-left: 5px">
+                                 <p>
+                                    OLX Group </br> Google Developer Expert Android
+                                 </p>
+                              </div>
+                           </div>
+
+                           <div id="popup_3" class="container ts-speaker-popup mfp-hide">
+                              <div class="row">
+                                 <div class="col-lg-6">
+                                    <div class="ts-speaker-popup-img">
+                                       <img src="images/speakers/YuryCamacho.jpg" alt="">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <div class="ts-speaker-popup-content">
+                                       <h3 class="ts-title">
+                                          Yury Camacho
+                                          <img src="https://lipis.github.io/flag-icon-css/flags/4x3/bo.svg" style="width: 20px; margin-left: 15px; margin-bottom: 5px"><img src="https://lipis.github.io/flag-icon-css/flags/4x3/ar.svg" style="width: 20px; margin-left: 5px; margin-bottom: 5px">
+                                       </h3>
+                                       <span class="speakder-designation" style="color: #69D6F7; font-size: 18px">
+                                          <b>
+                                             OLX Group | Google Developer Expert Android
+                                          </b>
+                                       </span>
+                                       <p class="speakder-designation">
+                                          Yury Camacho es Google Developer Expert en Android e Ingeniero de Sistemas,con mas de 8 años desarrollando apps móviles, trabajó en  Globant, JPMorgan Chase, OLX Group.
+                                       </p>
+                                       <!--AGENDA DE EXPOSITOR-->
+                                       <span class="speaker-session-info">
+                                          <h5 style="margin-top: 15px">
+                                             Kotlin Talk: 
+                                          </h5>
+                                          <p>
+                                             <b>
+                                                Kotlin Multiplatform
+                                             </b>
+                                          </p>
+                                       </span>
+                                       <p class="speakder-designation">
+                                          Kotlin multiplataforma  ayuda a compartir los datos / dominio de la aplicación entre Android, iOS o incluso aplicaciones web. JetBrains introdujo KMP en Kotlin 1.2 y lo modificó en 1.3 y parece que la API no cambiará mucho en el futuro, sin embargo, todavía está marcado como experimental.en esta charla veremos como diseñar y desarrollar apps multiplataforma con Kotlin con un demo.
+                                       </p>
+                                       <span class="speaker-session-info">
+                                          <h5 style="margin-top: 15px">Hour: </h5>
+                                             <p>
+                                                <b>
+                                                   10:00 - 10:30
+                                                </b>
+                                             </p>
+                                       </span>
+                                       <div class="ts-speakers-social" style="margin-top: 20px">
+                                          <a href="https://www.github.com/camachoyury" target="_blank">
+                                             <i class="fa fa-github"></i>
+                                          </a>
+                                             <a href="https://twitter.com/camachoyury" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                             </a>
+                                             <a href="https://www.linkedin.com/in/camachoyury/" target="_blank">
+                                                <i class="fa fa-linkedin"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> <!-- Fin fila -->
+
+                     <div class="row justify-content-center"> <!-- Inicio fila -->
+                        <!-- SPEAKER 4 -->
+                        <div class="col-lg-3 col-md-6 wow" data-wow-duration="1.5s" data-wow-delay="400ms">
+                           <div class="ts-speaker">
+                              <div class="speaker-img">
+                                 <img class="img-fluid" src="images/speakers/SantiagoCarrillo.png" alt="">
+                                    <a href="#popup_4" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                       <i class="icon icon-plus"></i>
+                                    </a>
+                              </div>
+                              <div class="ts-speaker-info">
+                                 <h3 class="ts-title">
+                                    <a href="#">
+                                       Santiago Carrillo
+                                    </a>
+                                 </h3>
+                                 <img src="https://lipis.github.io/flag-icon-css/flags/4x3/co.svg" style="width: 20px; margin-bottom: 10px;">
+                                 <p>
+                                    Zygo</br>Google Developer Expert Android
+                                 </p>
+                              </div>
+                           </div>
+
+                           <div id="popup_4" class="container ts-speaker-popup mfp-hide">
+                              <div class="row">
+                                 <div class="col-lg-6">
+                                    <div class="ts-speaker-popup-img">
+                                       <img src="images/speakers/SantiagoCarrillo.png" alt="">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <div class="ts-speaker-popup-content">
+                                       <h3 class="ts-title">
+                                          Santiago Carrillo
+                                          <img src="https://lipis.github.io/flag-icon-css/flags/4x3/co.svg" style="width: 20px; margin-left: 15px; margin-bottom: 5px">
+                                       </h3>
+                                       <span class="speakder-designation" style="color: #69D6F7; font-size: 18px">
+                                          <b>
+                                             Zygo | Google Developer Expert Android
+                                          </b>
+                                       </span>
+                                       <p class="speakder-designation">
+                                           Santiago es MSc en Ingeniería de Software de la Universidad de Amsterdam y Licenciado en Ingeniería de Sistemas. Santiago lleva más de 7 años desarrollando aplicaciones en Android y 4 años como emprendedor. Actualmente es Google Developer Expert en Android.
+                                       </p>
+                                       <!--AGENDA DE EXPOSITOR-->
+                                       <span class="speaker-session-info">
+                                          <h5 style="margin-top: 30px">
+                                             Kotlin Talk: 
+                                          </h5>
+                                          <p>
+                                             <b>
+                                                Inyección de Dependencias en Kotlin con Koin
+                                             </b>
+                                          </p>
+                                       </span>
+                                       <p class="speakder-designation">
+                                          La inyección de dependencias nos permite desacoplar nuestra arquitectura. En esta charla veremos una implementación en Kotlin de una App Android usando el principio de inyección de dependencias. 
+                                       </p>
+                                       <span class="speaker-session-info">
+                                          <h5 style="margin-top: 30px">Hour: </h5>
+                                             <p>
+                                                <b>
+                                                   10:00 - 10:30
+                                                </b>
+                                             </p>
+                                       </span>
+                                       <div class="ts-speakers-social" style="margin-top: 30px">
+                                          <a href="https://www.github.com/sancarbar" target="_blank">
+                                             <i class="fa fa-github"></i>
+                                          </a>
+                                          <a href="https://www.facebook.com/sancarbar" target="_blank">
+                                             <i class="fa fa-facebook"></i>
+                                          </a>
+                                             <a href="https://twitter.com/sancarbar" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                             </a>                     
+                                             <a href="https://www.linkedin.com/in/sancarbar" target="_blank">
+                                                <i class="fa fa-linkedin"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- SPEAKER 5 -->
+                        <div class="col-lg-3 col-md-6 wow" data-wow-duration="1.5s" data-wow-delay="400ms">
+                           <div class="ts-speaker">
+                              <div class="speaker-img">
+                                 <img class="img-fluid" src="images/speakers/ArmandoPicon.jpg" alt="">
+                                    <a href="#popup_5" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                       <i class="icon icon-plus"></i>
+                                    </a>
+                              </div>
+                              <div class="ts-speaker-info">
+                                 <h3 class="ts-title">
+                                    <a href="#">
+                                       Armando Picón
+                                    </a>
+                                 </h3>
+                                 <img src="https://lipis.github.io/flag-icon-css/flags/4x3/pe.svg" style="width: 20px; margin-bottom: 10px;"><img src="https://lipis.github.io/flag-icon-css/flags/4x3/cl.svg" style="width: 20px; margin-bottom: 10px; margin-left: 5px">
+                                 <p>
+                                    Cornershop Inc.</br>Mobile Engineer
+                                 </p>
+                              </div>
+                           </div>
+
+                           <div id="popup_5" class="container ts-speaker-popup mfp-hide">
+                              <div class="row">
+                                 <div class="col-lg-6">
+                                    <div class="ts-speaker-popup-img">
+                                       <img src="images/speakers/ArmandoPicon.jpg" alt="">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <div class="ts-speaker-popup-content">
+                                       <h3 class="ts-title">
+                                          Armando Picón
+                                          <img src="https://lipis.github.io/flag-icon-css/flags/4x3/pe.svg" style="width: 20px; margin-left: 15px; margin-bottom: 5px"><img src="https://lipis.github.io/flag-icon-css/flags/4x3/cl.svg" style="width: 20px; margin-left: 5px; margin-bottom: 5px">
+                                       </h3>
+                                       <span class="speakder-designation" style="color: #69D6F7; font-size: 18px">
+                                          <b>
+                                             Cornershop Inc. | Mobile Engineer
+                                          </b>
+                                       </span>
+                                       <p class="speakder-designation">
+                                          Armando, a Peruvian Mobile Engineer, is currently an Android Engineer for Cornershop Inc., a tech company providing grocery delivery services in Chile, with additional operations in Mexico and Canada.
+                                       </p>
+                                       <!--AGENDA DE EXPOSITOR-->
+                                       <span class="speaker-session-info">
+                                          <h5 style="margin-top: 30px">
+                                             Kotlin Talk: 
+                                          </h5>
+                                          <p>
+                                             <b>
+                                                Coroutines in the way!
+                                             </b>
+                                          </p>
+                                       </span>
+                                       <p class="speakder-designation">
+                                          Las corutinas son una de las principales características de Kotlin que nos permiten realizar operaciones asíncronas. En esta plática hablaremos sobre su uso dentro del desarrollo de aplicaciones para Android y cómo migrar desde otros componentes.
+                                       </p>
+                                       <span class="speaker-session-info">
+                                          <h5 style="margin-top: 30px">Hour: </h5>
+                                             <p>
+                                                <b>
+                                                   10:00 - 10:30
+                                                </b>
+                                             </p>
+                                       </span>
+                                       <div class="ts-speakers-social" style="margin-top: 40px">
+                                          <a href="https://www.github.com/devpicon" target="_blank">
+                                             <i class="fa fa-github"></i>
+                                          </a>
+                                          <a href="https://www.facebook.com/devpicon" target="_blank">
+                                             <i class="fa fa-facebook"></i>
+                                          </a>
+                                             <a href="https://twitter.com/devpicon" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                             </a>                     
+                                             <a href="https://www.instagram.com/" target="_blank">
+                                                <i class="fa fa-instagram"></i>
+                                             </a>
+                                             <a href="https://www.linkedin.com/in/armandopicon/" target="_blank">
+                                                <i class="fa fa-linkedin"></i>
+                                             </a>
+                                             <a href="https://medium.com/@devpicon" target="_blank">
+                                                <i class="fa fa-code"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- SPEAKER 6 -->
+                        <div class="col-lg-3 col-md-6 wow" data-wow-duration="1.5s" data-wow-delay="400ms">
+                           <div class="ts-speaker">
+                              <div class="speaker-img">
+                                 <img class="img-fluid" src="images/speakers/JuanGuillermoGomez.png" alt="">
+                                    <a href="#popup_6" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                       <i class="icon icon-plus"></i>
+                                    </a>
+                              </div>
+                              <div class="ts-speaker-info">
+                                 <h3 class="ts-title">
+                                    <a href="#">
+                                       Juan Guillermo Gómez
+                                    </a>
+                                 </h3>
+                                 <img src="https://lipis.github.io/flag-icon-css/flags/4x3/co.svg" style="width: 20px; margin-bottom: 10px;">
+                                 <p>
+                                    DevHack</br> Google Developer Expert Firebase & GCP
+                                 </p>
+                              </div>
+                           </div>
+
+                           <div id="popup_6" class="container ts-speaker-popup mfp-hide">
+                              <div class="row">
+                                 <div class="col-lg-6">
+                                    <div class="ts-speaker-popup-img">
+                                       <img src="images/speakers/JuanGuillermoGomez.png" alt="">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <div class="ts-speaker-popup-content">
+                                       <h3 class="ts-title">
+                                          Juan Guillermo Gómez
+                                          <img src="https://lipis.github.io/flag-icon-css/flags/4x3/co.svg" style="width: 20px; margin-left: 15px; margin-bottom: 5px">
+                                       </h3>
+                                       <span class="speakder-designation" style="color: #69D6F7; font-size: 18px">
+                                          <b>
+                                             DevHack | Google Developer Expert Firebase & GCP
+                                          </b>
+                                       </span>
+                                       <p class="speakder-designation">
+                                          Juan is GDE (Google Developer Expert) in Firebase and GCP, holds a BS in System Engineering and a MS in Software Engineering at Universidad San Buenaventura Cali. 
+                                       </p>
+                                       <!--AGENDA DE EXPOSITOR-->
+                                       <span class="speaker-session-info">
+                                          <h5 style="margin-top: 30px">
+                                             Kotlin Talk: 
+                                          </h5>
+                                          <p>
+                                             <b>
+                                                Mobile Backends with ktor and Google Cloud
+                                             </b>
+                                          </p>
+                                       </span>
+                                       <p class="speakder-designation">
+                                          Se escucha mucho de Kotlin con Android pero muy poco de kotlin en otros entornos. Con Kotlin tenemos la posibilidad de crear aplicaciones web o procesar datos en un backend. Jetbrains libero un framework asíncrono con alta escalabilidad llamado Ktor para desarrollar aplicaciones a nivel de servidor. En esta charla crearemos un microservicio con ktor y lo desplegaremos en Cloud Run de GCP.
+                                       </p>
+                                       <span class="speaker-session-info">
+                                          <h5 style="margin-top: 30px">Hour: </h5>
+                                             <p>
+                                                <b>
+                                                   10:00 - 10:30
+                                                </b>
+                                             </p>
+                                       </span>
+                                       <div class="ts-speakers-social" style="margin-top: 40px">
+                                          <a href="https://www.github.com/jggomez" target="_blank">
+                                             <i class="fa fa-github"></i>
+                                          </a>
+                                          <a href="https://www.facebook.com/" target="_blank">
+                                             <i class="fa fa-facebook"></i>
+                                          </a>
+                                             <a href="https://twitter.com/jggomezt" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                             </a>                     
+                                             <a href="https://www.linkedin.com/in/jggomezt/" target="_blank">
+                                                <i class="fa fa-linkedin"></i>
+                                             </a>
+                                             <a href="https://medium.com/@jggomezt" target="_blank">
+                                                <i class="fa fa-code"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> <!-- Fin fila -->
+
+                     <div class="row justify-content-center"> <!-- Inicio fila -->
+                        <!-- SPEAKER 7 -->
+                        <div class="col-lg-3 col-md-6 wow" data-wow-duration="1.5s" data-wow-delay="400ms">
+                           <div class="ts-speaker">
+                              <div class="speaker-img">
+                                 <img class="img-fluid" src="images/speakers/BrunoAybar.jpeg" alt="">
+                                    <a href="#popup_7" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                       <i class="icon icon-plus"></i>
+                                    </a>
+                              </div>
+                              <div class="ts-speaker-info">
+                                 <h3 class="ts-title">
+                                    <a href="#">
+                                       Bruno Aybar
+                                    </a>
+                                 </h3>
+                                 <img src="https://lipis.github.io/flag-icon-css/flags/4x3/pe.svg" style="width: 20px; margin-bottom: 10px;">
+                                 <p>
+                                    Avantica Technologies</br>Software Engineer
+                                 </p>
+                              </div>
+                           </div>
+
+                           <div id="popup_7" class="container ts-speaker-popup mfp-hide">
+                              <div class="row">
+                                 <div class="col-lg-6">
+                                    <div class="ts-speaker-popup-img">
+                                       <img src="images/speakers/BrunoAybar.jpeg" alt="">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <div class="ts-speaker-popup-content">
+                                       <h3 class="ts-title">
+                                          Bruno Aybar
+                                          <img src="https://lipis.github.io/flag-icon-css/flags/4x3/pe.svg" style="width: 20px; margin-left: 15px; margin-bottom: 5px">
+                                       </h3>
+                                       <span class="speakder-designation" style="color: #69D6F7; font-size: 18px">
+                                          <b>
+                                             Avantica Technologies | Software Engineer
+                                          </b>
+                                       </span>
+                                       <p class="speakder-designation">
+                                          Bruno Aybar es Software Engineer especializado en Android / iOS. Co-organizador de Android Dev Perú y Kotlin Perú. 
+                                       </p>
+                                       <!--AGENDA DE EXPOSITOR-->
+                                       <span class="speaker-session-info">
+                                          <h5 style="margin-top: 30px">
+                                             Kotlin Talk: 
+                                          </h5>
+                                          <p>
+                                             <b>
+                                                Understanding Kotlin's Type System
+                                             </b>
+                                          </p>
+                                       </span>
+                                       <p class="speakder-designation">
+                                          Muchas de las funcionalidades de Kotlin parecen arte de magia, es por eso que es un lenguaje de programación sumamente atractivo.
+                                          En esta charla veremos a detalle cómo es que el compilador aprovecha al máximo la jerarquía de tipos que existe en Kotlin, para hacer posible que varios de los features considerados ""syntactic sugar"" puedan existir.
+                                       </p>
+                                       <span class="speaker-session-info">
+                                          <h5 style="margin-top: 30px">Hour: </h5>
+                                             <p>
+                                                <b>
+                                                   10:00 - 10:30
+                                                </b>
+                                             </p>
+                                       </span>
+                                       <div class="ts-speakers-social" style="margin-top: 40px">
+                                          <a href="https://www.github.com/bruno125" target="_blank">
+                                             <i class="fa fa-github"></i>
+                                          </a>
+                                             <a href="https://twitter.com/brunoaybarg" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                             </a>
+                                             <a href="https://brunoaybar.com" target="_blank">
+                                                <i class="fa fa-code"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- SPEAKER 8 -->
+                        <div class="col-lg-3 col-md-6 wow" data-wow-duration="1.5s" data-wow-delay="400ms">
+                           <div class="ts-speaker">
+                              <div class="speaker-img">
+                                 <img class="img-fluid" src="images/speakers/GustavoLizarraga.png" alt="">
+                                    <a href="#popup_8" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                       <i class="icon icon-plus"></i>
+                                    </a>
+                              </div>
+                              <div class="ts-speaker-info">
+                                 <h3 class="ts-title">
+                                    <a href="#">
+                                       Gustavo Lizárraga
+                                    </a>
+                                 </h3>
+                                 <img src="https://lipis.github.io/flag-icon-css/flags/4x3/bo.svg" style="width: 20px; margin-bottom: 10px;">
+                                 <p>
+                                    Auth0 Ambassador</br>iOS/Android Dev | Android ATC Trainer
+                                 </p>
+                              </div>
+                           </div>
+
+                           <div id="popup_8" class="container ts-speaker-popup mfp-hide">
+                              <div class="row">
+                                 <div class="col-lg-6">
+                                    <div class="ts-speaker-popup-img">
+                                       <img src="images/speakers/GustavoLizarraga.png" alt="">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <div class="ts-speaker-popup-content">
+                                       <h3 class="ts-title">
+                                          Gustavo Lizárraga
+                                          <img src="https://lipis.github.io/flag-icon-css/flags/4x3/bo.svg" style="width: 20px; margin-left: 15px; margin-bottom: 5px">
+                                       </h3>
+                                       <span class="speakder-designation" style="color: #69D6F7; font-size: 18px">
+                                          <b>
+                                             Auth0 Ambassador | iOS/Android Dev | Android ATC Trainer
+                                          </b>
+                                       </span>
+                                       <p class="speakder-designation">
+                                          Gustavo es Auth0 Ambassador, desarrollador Android e iOS freelance, instructor Android ATC y lider de las comunidades GDG Android Bolivia y Kotlin La Paz.
+                                       </p>
+                                       <!--AGENDA DE EXPOSITOR-->
+                                       <span class="speaker-session-info">
+                                          <h5 style="margin-top: 15px">
+                                             Kotlin Talk: 
+                                          </h5>
+                                          <p>
+                                             <b>
+                                                Modern Identity with Auth0 in Kotlin
+                                             </b>
+                                          </p>
+                                       </span>
+                                       <p class="speakder-designation">
+                                          Auth0 es un servicio que facilita la gestión de identidad y autenticación, esto por el hecho que en la actualidad la identidad se volvió más crítica a medida que las empresas se vuelven más digitales, es ahí donde ingresa Auth0 al proporcionar a las empresas un servicio que elimina la complejidad de la autenticación de las aplicaciones y las API.
+                                          En ésta charla veremos un poco mas acerca de Auth0 y su implementación en una aplicación Android con Kotlin.
+                                       </p>
+                                       <span class="speaker-session-info">
+                                          <h5 style="margin-top: 15px">Hour: </h5>
+                                             <p>
+                                                <b>
+                                                   10:00 - 10:30
+                                                </b>
+                                             </p>
+                                       </span>
+                                       <div class="ts-speakers-social" style="margin-top: 25px">
+                                          <a href="https://www.github.com/gusn8" target="_blank">
+                                             <i class="fa fa-github"></i>
+                                          </a>
+                                          <a href="https://www.facebook.com/gusn8" target="_blank">
+                                             <i class="fa fa-facebook"></i>
+                                          </a>
+                                             <a href="https://twitter.com/gusn8_" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                             </a>                     
+                                             <a href="https://www.instagram.com/gusn8" target="_blank">
+                                                <i class="fa fa-instagram"></i>
+                                             </a>
+                                             <a href="https://www.linkedin.com/in/gusn8/" target="_blank">
+                                                <i class="fa fa-linkedin"></i>
+                                             </a>
+                                             <a href="https://www.miramicodigo.com" target="_blank">
+                                                <i class="fa fa-code"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> <!-- Fin fila -->
+                  </div>
+               </div>
+            </div>
+            
+            <a id="schedule"></a>
+         </section>
+         <!-- ts speaker end-->
+
+         <section class="ts-schedule">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-8 mx-auto">
+                        <h2 class="section-title text-center">
+                           <span>Prográmate</span>
+                           Agenda
+                        </h2>
+                        <div class="ts-schedule-nav">
+                           <ul class="nav nav-tabs justify-content-center" role="tablist">
+                              <li class="nav-item">
+                                 <a class="active" title="Click Me" href="#date1" role="tab" data-toggle="tab">
+                                    <h3>KOTLIN TALKS</h3>
+                                    <span>Teatro Modesta Sanjinés</span>
+                                    </a>
+                              </li>
+                           </ul>
+                           <!-- Tab panes -->
+                        </div>
                      </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div class="tab-content schedule-tabs">
+                           <div role="tabpanel" class="tab-pane active" id="date1">
+                              <div class="schedule-listing launce">
+                                 <div class="schedule-slot-time">
+                                    <span> 08:30 - 09:30</span>
+                                 </div>
+                                 <div class="schedule-slot-info">
+
+                                    <div class="schedule-slot-info-content">
+                                       <h3 class="schedule-slot-title">REGISTRY
+                                          <strong>@GDG Android Bolivia</strong>
+                                       </h3>
+                                       <a href="#">
+                                          <img  src="images/gdg/LogoGDGABHorizontal.png" alt="GDG Android Bolivia" width="200px">
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="schedule-listing">
+                                 <div class="schedule-slot-time">
+                                    <span> 09:40 - 09:55 </span>
+                                    OPENING
+                                 </div>
+                                 <div class="schedule-slot-info">
+                                    <a href="#">
+                                       <img class="schedule-slot-speakers" src="images/speakers/GustavoLizarraga.jpg" alt="Gustavo Lizárraga">
+                                    </a>
+                                    <div class="schedule-slot-info-content">
+                                       <h3 class="schedule-slot-title">Opening Kotlin/Everywhere La Paz
+                                          <strong>Gustavo Lizárraga</strong>
+                                       </h3>
+                                       <!--DESC CHARLA DE CARLOS A-->
+                                       <p></p>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="schedule-listing">
+                                 <div class="schedule-slot-time">
+                                    <span> 10:00 - 10:35 </span>
+                                    KOTLIN TALK
+                                 </div>
+                                 <div class="schedule-slot-info">
+                                    <a href="#">
+                                       <img class="schedule-slot-speakers" src="images/speakers/cristian-gomez.jpg" alt="">
+                                    </a>
+                                    <div class="schedule-slot-info-content">
+                                       <h3 class="schedule-slot-title">Kotlin Talk Title
+                                          <strong>Cristian Gómez</strong>
+                                       </h3>
+                                       <p>La programación funcional la vivimos día a día, ahora que tal si la combinamos con estrategias para aprovecharla de una manera mas inteligente. En esta charla veremos el uso de tipos, funciones y estructuras que nos permitirán elaborar un caso de uso completo, todo usando Kotlin!</p>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="schedule-listing">
+                                 <div class="schedule-slot-time">
+                                    <span> 10:40 - 11:15 </span>
+                                    KOTLIN TALK
+                                 </div>
+                                 <div class="schedule-slot-info">
+                                    <a href="#">
+                                       <img class="schedule-slot-speakers" src="images/speakers/cristian-gomez.jpg" alt="">
+                                    </a>
+                                    <div class="schedule-slot-info-content">
+                                       <h3 class="schedule-slot-title">Kotlin Talk Title
+                                          <strong>Cristian Gómez</strong>
+                                       </h3>
+                                       <p>La programación funcional la vivimos día a día, ahora que tal si la combinamos con estrategias para aprovecharla de una manera mas inteligente. En esta charla veremos el uso de tipos, funciones y estructuras que nos permitirán elaborar un caso de uso completo, todo usando Kotlin!</p>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="schedule-listing">
+                                 <div class="schedule-slot-time">
+                                    <span> 11:20 - 11:55 </span>
+                                    KOTLIN TALK                              
+                                 </div>
+                                 <div class="schedule-slot-info">
+                                    <a href="#">
+                                       <img class="schedule-slot-speakers" src="images/speakers/cristian-gomez.jpg" alt="">
+                                    </a>
+                                    <div class="schedule-slot-info-content">
+                                       <h3 class="schedule-slot-title">Kotlin Talk Title
+                                          <strong>Cristian Gómez</strong>
+                                       </h3>
+                                       <p>La programación funcional la vivimos día a día, ahora que tal si la combinamos con estrategias para aprovecharla de una manera mas inteligente. En esta charla veremos el uso de tipos, funciones y estructuras que nos permitirán elaborar un caso de uso completo, todo usando Kotlin!</p>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="schedule-listing launce">
+                                 <div class="schedule-slot-time">
+                                    <span> 12:00 - 12:10 </span>
+                                    SESSION PHOTOGRAPH
+                                 </div>
+                                 <div class="schedule-slot-info">
+
+                                    <div class="schedule-slot-info-content">
+                                       <h3 class="schedule-slot-title">Photoshoot
+                                       </h3>
+                                       <a href="#">
+                                          <img  src="images/gdg/LogoGDGABHorizontal.png" alt="GDG Android Bolivia" width="200px">
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="schedule-listing launce">
+                                 <div class="schedule-slot-time">
+                                    <span> 12:15 - 13:25 </span>
+                                    FOOD
+                                 </div>
+                                 <div class="schedule-slot-info">
+
+                                    <div class="schedule-slot-info-content">
+                                       <h3 class="schedule-slot-title">Lunch, Networking and Games
+                                       </h3>
+                                       <a href="#">
+                                          <img  src="images/gdg/LogoGDGABHorizontal.png" alt="GDG Android Bolivia" width="200px">
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="schedule-listing">
+                                 <div class="schedule-slot-time">
+                                    <span> 13:30 - 14:05 </span>
+                                    KOTLIN TALK
+                                 </div>
+                                 <div class="schedule-slot-info">
+                                    <a href="#">
+                                          <img class="schedule-slot-speakers" src="images/speakers/yuri-camacho.jpg" alt="">
+                                    </a>
+                                    <div class="schedule-slot-info-content">
+                                       <h3 class="schedule-slot-title">Titulo Kotlin Talk
+                                          <strong>Yury Camacho</strong>
+                                       </h3>                                 
+                                       <p> Descripción de la charla</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="schedule-listing">
+                                 <div class="schedule-slot-time">
+                                    <span> 14:10 - 14:45 </span>
+                                    KOTLIN TALK
+                                 </div>
+                                 <div class="schedule-slot-info">
+                                    <a href="#">
+                                          <img class="schedule-slot-speakers" src="images/speakers/yuri-camacho.jpg" alt="">
+                                    </a>
+                                    <div class="schedule-slot-info-content">
+                                       <h3 class="schedule-slot-title">Titulo Kotlin Talk
+                                          <strong>Yury Camacho</strong>
+                                       </h3>                                 
+                                       <p> Descripción de la charla</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="schedule-listing launce">
+                                 <div class="schedule-slot-time">
+                                    <span> 14:50 - 15:10 </span>
+                                 </div>
+                                 <div class="schedule-slot-info">
+
+                                    <div class="schedule-slot-info-content">
+                                       <h3 class="schedule-slot-title">Snack, Coffee and Networking.
+                                       </h3>
+                                       <a href="#">
+                                          <img  src="images/gdg/LogoGDGABHorizontal.png" alt="GDG Android Bolivia" width="200px">
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="schedule-listing">
+                                 <div class="schedule-slot-time">
+                                    <span> 15:15 - 15:50 </span>
+                                    KOTLIN TALK
+                                 </div>
+                                 <div class="schedule-slot-info">
+                                    <a href="#">
+                                       <img class="schedule-slot-speakers" src="images/speakers/adrian.jpg" alt="Carlos Muñoz">
+                                    </a>
+                                    <div class="schedule-slot-info-content">
+                                       <h3 class="schedule-slot-title">Effective Kotlin Migration in Android
+                                          <strong>Carlos Daniel Muñoz</strong>
+                                       </h3>
+                                       <p>Recursos acerca de cómo empezar</p>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="schedule-listing">
+                                 <div class="schedule-slot-time">
+                                    <span> 15:55 - 16:30 </span>
+                                    KOTLIN TALKS
+                                 </div>
+                                 <div class="schedule-slot-info">
+                                    <a href="#">
+                                       <img class="schedule-slot-speakers" src="images/speakers/juan-guillermo-gomez.jpg" alt="Juan Guillermo">
+                                    </a>
+                                    <div class="schedule-slot-info-content">
+                                       <h3 class="schedule-slot-title">Mobile Backends with Kotlin and Google Cloud
+                                          <strong>Camilo Alzate y Juan Guillermo Gómez</strong>
+                                       </h3>
+                                       <p>Kotlin un nuevo lenguaje que corre sobre la JVM.</p>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="schedule-listing launce">
+                                    <div class="schedule-slot-time">
+                                       <span> 16:35 - 16:50 </span>
+                                    </div>
+                                    <div class="schedule-slot-info">
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">Awards winners</h3>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="schedule-listing launce">
+                                    <div class="schedule-slot-time">
+                                       <span> 16:50 - 17:00 </span>
+                                    </div>
+                                    <div class="schedule-slot-info">
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">Closing event and acknowledgments.</h3>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="schedule-listing launce">
+                                    <div class="schedule-slot-time">
+                                       <span> 17:00 - 17:30 </span>
+                                    </div>
+                                    <div class="schedule-slot-info">
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">Certificate delivery.</h3>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a id="sponsors"></a>
+            </section>
+
+         <section class="ts-intro-sponsors" style="background: #000">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-12">
+                     <h2 class="section-title white">
+                        SPONSORED BY
+                     </h2>
                   </div>
                </div>
                <div class="row">
                   <div class="col-lg-12">
-                     <div class="tab-content schedule-tabs">
-                        <div role="tabpanel" class="tab-pane active" id="date1">
-                           <div class="schedule-listing launce">
-                              <div class="schedule-slot-time">
-                                 <span> 08:30 - 09:30</span>
-                              </div>
-                              <div class="schedule-slot-info">
+                     <div class="sponsors-logo text-center">
 
-                                 <div class="schedule-slot-info-content">
-                                    <h3 class="schedule-slot-title">REGISTRY
-                                       <strong>@GDG Android Bolivia</strong>
-                                    </h3>
-                                    <a href="#">
-                                       <img  src="images/gdg/LogoGDGABHorizontal.png" alt="GDG Android Bolivia" width="200px">
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-
-                           <div class="schedule-listing">
-                              <div class="schedule-slot-time">
-                                 <span> 09:40 - 09:55 </span>
-                                 OPENING
-                              </div>
-                              <div class="schedule-slot-info">
-                                 <a href="#">
-                                    <img class="schedule-slot-speakers" src="images/speakers/GustavoLizarraga.jpg" alt="Gustavo Lizárraga">
+                        <div class="row justify-content-center">
+                           <div class="col-md-2 d-flex align-items-center">
+                              <p>
+                                 <a href="https://developers.google.com/" target="_blank">
+                                    <img src="images/sponsors/LogoGoogleDevelopers.png" alt="Google Developers" class="img-fluid">
                                  </a>
-                                 <div class="schedule-slot-info-content">
-                                    <h3 class="schedule-slot-title">Opening Kotlin/Everywhere La Paz
-                                       <strong>Gustavo Lizárraga</strong>
-                                    </h3>
-                                    <!--DESC CHARLA DE CARLOS A-->
-                                    <p></p>
-                                 </div>
-                              </div>
+                              </p>
                            </div>
-
-                           <div class="schedule-listing">
-                              <div class="schedule-slot-time">
-                                 <span> 10:00 - 10:35 </span>
-                                 KOTLIN TALK
-                              </div>
-                              <div class="schedule-slot-info">
-                                 <a href="#">
-                                    <img class="schedule-slot-speakers" src="images/speakers/cristian-gomez.jpg" alt="">
+                           <div class="col-md-2 d-flex align-items-center">
+                              <p>
+                                 <a href="https://www.jetbrains.com/" target="_blank"> 
+                                    <img src="images/sponsors/LogoKotlinEverywhere.png" alt="Kotlin/Everywhere | Jetbrains" class="img-fluid">
                                  </a>
-                                 <div class="schedule-slot-info-content">
-                                    <h3 class="schedule-slot-title">Kotlin Talk Title
-                                       <strong>Cristian Gómez</strong>
-                                    </h3>
-                                    <p>La programación funcional la vivimos día a día, ahora que tal si la combinamos con estrategias para aprovecharla de una manera mas inteligente. En esta charla veremos el uso de tipos, funciones y estructuras que nos permitirán elaborar un caso de uso completo, todo usando Kotlin!</p>
-                                 </div>
-                              </div>
+                              </p>
                            </div>
-
-                           <div class="schedule-listing">
-                              <div class="schedule-slot-time">
-                                 <span> 10:40 - 11:15 </span>
-                                 KOTLIN TALK
-                              </div>
-                              <div class="schedule-slot-info">
-                                 <a href="#">
-                                    <img class="schedule-slot-speakers" src="images/speakers/cristian-gomez.jpg" alt="">
+                           <div class="col-md-2 d-flex align-items-center">
+                              <p>
+                                 <a href="https://auth0.com/" target="_blank">
+                                    <img src="images/sponsors/LogoAuth0.png" alt="Auth0" class="img-fluid">
                                  </a>
-                                 <div class="schedule-slot-info-content">
-                                    <h3 class="schedule-slot-title">Kotlin Talk Title
-                                       <strong>Cristian Gómez</strong>
-                                    </h3>
-                                    <p>La programación funcional la vivimos día a día, ahora que tal si la combinamos con estrategias para aprovecharla de una manera mas inteligente. En esta charla veremos el uso de tipos, funciones y estructuras que nos permitirán elaborar un caso de uso completo, todo usando Kotlin!</p>
-                                 </div>
-                              </div>
+                              </p>
                            </div>
+                        </div>
 
-                           <div class="schedule-listing">
-                              <div class="schedule-slot-time">
-                                 <span> 11:20 - 11:55 </span>
-                                 KOTLIN TALK                              
-                              </div>
-                              <div class="schedule-slot-info">
-                                 <a href="#">
-                                    <img class="schedule-slot-speakers" src="images/speakers/cristian-gomez.jpg" alt="">
+                        <div class="row justify-content-center">
+                           <div class="col-md-2 d-flex align-items-center">
+                              <p>
+                                 <a href="http://www.avtbonvoyage.com/" target="_blank">
+                                    <img src="images/sponsors/LogoBonVoyage.png" alt="Bon Voyage - Agencia de Viajes" style="width: 200px;">
                                  </a>
-                                 <div class="schedule-slot-info-content">
-                                    <h3 class="schedule-slot-title">Kotlin Talk Title
-                                       <strong>Cristian Gómez</strong>
-                                    </h3>
-                                    <p>La programación funcional la vivimos día a día, ahora que tal si la combinamos con estrategias para aprovecharla de una manera mas inteligente. En esta charla veremos el uso de tipos, funciones y estructuras que nos permitirán elaborar un caso de uso completo, todo usando Kotlin!</p>
-                                 </div>
-                              </div>
+                              </p>
                            </div>
 
-                           <div class="schedule-listing launce">
-                              <div class="schedule-slot-time">
-                                 <span> 12:00 - 12:10 </span>
-                                 SESSION PHOTOGRAPH
-                              </div>
-                              <div class="schedule-slot-info">
-
-                                 <div class="schedule-slot-info-content">
-                                    <h3 class="schedule-slot-title">Photoshoot
-                                    </h3>
-                                    <a href="#">
-                                       <img  src="images/gdg/LogoGDGABHorizontal.png" alt="GDG Android Bolivia" width="200px">
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="schedule-listing launce">
-                              <div class="schedule-slot-time">
-                                 <span> 12:15 - 13:25 </span>
-                                 FOOD
-                              </div>
-                              <div class="schedule-slot-info">
-
-                                 <div class="schedule-slot-info-content">
-                                    <h3 class="schedule-slot-title">Lunch, Networking and Games
-                                    </h3>
-                                    <a href="#">
-                                       <img  src="images/gdg/LogoGDGABHorizontal.png" alt="GDG Android Bolivia" width="200px">
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-
-                           <div class="schedule-listing">
-                              <div class="schedule-slot-time">
-                                 <span> 13:30 - 14:05 </span>
-                                 KOTLIN TALK
-                              </div>
-                              <div class="schedule-slot-info">
-                                 <a href="#">
-                                       <img class="schedule-slot-speakers" src="images/speakers/yuri-camacho.jpg" alt="">
+                           <div class="col-md-2 d-flex align-items-center">
+                              <p>
+                                 <a href="https://cognos.com.bo/" target="_blank">
+                                    <img src="images/sponsors/LogoCognos.png" alt="Cognos Capacitación" style="width: 200px;  margin-left: 50px; margin-right: 50px;">
                                  </a>
-                                 <div class="schedule-slot-info-content">
-                                    <h3 class="schedule-slot-title">Titulo Kotlin Talk
-                                       <strong>Yury Camacho</strong>
-                                    </h3>                                 
-                                    <p> Descripción de la charla</p>
-                                 </div>
-                              </div>
+                              </p>
                            </div>
-                           <div class="schedule-listing">
-                              <div class="schedule-slot-time">
-                                 <span> 14:10 - 14:45 </span>
-                                 KOTLIN TALK
-                              </div>
-                              <div class="schedule-slot-info">
-                                 <a href="#">
-                                       <img class="schedule-slot-speakers" src="images/speakers/yuri-camacho.jpg" alt="">
-                                 </a>
-                                 <div class="schedule-slot-info-content">
-                                    <h3 class="schedule-slot-title">Titulo Kotlin Talk
-                                       <strong>Yury Camacho</strong>
-                                    </h3>                                 
-                                    <p> Descripción de la charla</p>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="schedule-listing launce">
-                              <div class="schedule-slot-time">
-                                 <span> 14:50 - 15:10 </span>
-                              </div>
-                              <div class="schedule-slot-info">
+                           
+                        </div>
 
-                                 <div class="schedule-slot-info-content">
-                                    <h3 class="schedule-slot-title">Snack, Coffee and Networking.
-                                    </h3>
-                                    <a href="#">
-                                       <img  src="images/gdg/LogoGDGABHorizontal.png" alt="GDG Android Bolivia" width="200px">
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-
-                           <div class="schedule-listing">
-                              <div class="schedule-slot-time">
-                                 <span> 15:15 - 15:50 </span>
-                                 KOTLIN TALK
-                              </div>
-                              <div class="schedule-slot-info">
-                                 <a href="#">
-                                    <img class="schedule-slot-speakers" src="images/speakers/adrian.jpg" alt="Carlos Muñoz">
-                                 </a>
-                                 <div class="schedule-slot-info-content">
-                                    <h3 class="schedule-slot-title">Effective Kotlin Migration in Android
-                                       <strong>Carlos Daniel Muñoz</strong>
-                                    </h3>
-                                    <p>Recursos acerca de cómo empezar</p>
-                                 </div>
-                              </div>
-                           </div>
-
-                           <div class="schedule-listing">
-                              <div class="schedule-slot-time">
-                                 <span> 15:55 - 16:30 </span>
-                                 KOTLIN TALKS
-                              </div>
-                              <div class="schedule-slot-info">
-                                 <a href="#">
-                                    <img class="schedule-slot-speakers" src="images/speakers/juan-guillermo-gomez.jpg" alt="Juan Guillermo">
-                                 </a>
-                                 <div class="schedule-slot-info-content">
-                                    <h3 class="schedule-slot-title">Mobile Backends with Kotlin and Google Cloud
-                                       <strong>Camilo Alzate y Juan Guillermo Gómez</strong>
-                                    </h3>
-                                    <p>Kotlin un nuevo lenguaje que corre sobre la JVM.</p>
-                                 </div>
-                              </div>
-                           </div>
-
-                           <div class="schedule-listing launce">
-                                 <div class="schedule-slot-time">
-                                    <span> 16:35 - 16:50 </span>
-                                 </div>
-                                 <div class="schedule-slot-info">
-                                    <div class="schedule-slot-info-content">
-                                       <h3 class="schedule-slot-title">Awards winners</h3>
-                                    </div>
-                                 </div>
-                              </div>
-
-                              <div class="schedule-listing launce">
-                                 <div class="schedule-slot-time">
-                                    <span> 16:50 - 17:00 </span>
-                                 </div>
-                                 <div class="schedule-slot-info">
-                                    <div class="schedule-slot-info-content">
-                                       <h3 class="schedule-slot-title">Closing event and acknowledgments.</h3>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="schedule-listing launce">
-                                 <div class="schedule-slot-time">
-                                    <span> 17:00 - 17:30 </span>
-                                 </div>
-                                 <div class="schedule-slot-info">
-                                    <div class="schedule-slot-info-content">
-                                       <h3 class="schedule-slot-title">Certificate delivery.</h3>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
+                        <div class="sponsor-btn text-center">
+                           <a href="#" class="btn" target="_blank">¡Quiero Apoyar!</a>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-            <a id="sponsors"></a>
          </section>
+         <!-- ts sponsors end-->
 
-      <section class="ts-intro-sponsors" style="background: #000">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-12">
-                  <h2 class="section-title white">
-                     SPONSORED BY
-                  </h2>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-12">
-                  <div class="sponsors-logo text-center">
-
-                     <div class="row justify-content-center">
-                        <div class="col-md-2 d-flex align-items-center">
-                           <p>
-                              <img src="images/sponsors/jetbrains.png" alt="Jetbrains" class="img-fluid">
-                           </p>
-                        </div>
-                        <div class="col-md-2 d-flex align-items-center">
-                           <p>
-                              <img src="images/sponsors/google.png" alt="Google" class="img-fluid">
-                           </p>
-                        </div>
-                     </div>
-
-                     <div class="sponsor-btn text-center">
-                        <a href="https://wa.me/573174498336" class="btn">¡Quiero Apoyar!</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- ts sponsors end-->
-
-      <!-- ts map direction start-->
-      <section class="ts-map-direction wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="400ms">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-5">
-                  <h2 class="column-title">
-                     Ubication
-                  </h2>
-
-                  <div class="ts-map-tabs">
-                     <ul class="nav" role="tablist">
-                        <li class="nav-item">
-                           <a class="nav-link active" href="#place" role="tab" data-toggle="tab">Meeting place</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#date" role="tab" data-toggle="tab">Date and Time</a>
-                        </li>
-                     </ul>
-
-                     <!-- Tab panes -->
-                     <div class="tab-content direction-tabs">
-                        <div role="tabpanel" class="tab-pane active" id="place">
-                           <div class="direction-tabs-content">
-                              <h3>Cine 6 de Agosto, La Paz, Bolivia</h3>
-                              <p class="derecttion-vanue">
-                                 Av. 6 de Agosto<br />
-                                 Entre Rosendo Gutierrez y Fernando Guachalla<br>
-                              </p>
-                           </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="date">
-                           <div class="direction-tabs-content">
-                              <h3>Sábado 24 de Agosto de 2019</h3>
-                              <p class="derecttion-vanue">
-                                 From 09:30 to 17:00
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-
-                  </div>
-
-               </div>
-               <div class="col-lg-6 offset-lg-1">
-                  <div class="ts-map">
-                     <div class="mapouter">
-                        <div class="gmap_canvas">
-                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1146.3866919333614!2d-68.12740059255087!3d-16.508272841738048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f206391129efb%3A0x21445081dea823b3!2sCine+Teatro+Municipal+6+de+agosto!5e0!3m2!1ses!2sbo!4v1559882664373!5m2!1ses!2sbo" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <div class="footer-area">
-         <section class="ts-book-seat" style="background-image: url(images/gdg/bg-book.png)">
+         <!-- ts map direction start-->
+         <section class="ts-map-direction wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="400ms">
             <div class="container">
                <div class="row">
-                  <div class="col-lg-8 mx-auto">
-                     <div class="book-seat-content text-center mb-70">
-                        <h2 class="section-title">
-                           <span>¿Qué esperas?</span>
-                           Separa tu cupo
-                        </h2>
-                        <a href="#" class="btn">Registrarme</a>
-                     </div>
-                  </div>
+                  <div class="col-lg-5">
+                     <h2 class="column-title">
+                        Ubication
+                     </h2>
 
-               </div>
-               <div class="ts-footer-newsletter">
-                  <div class="ts-newsletter">
-                     <div class="row">
-                        <div class="col-lg-4 mx-auto">
-                           <div class="ts-newsletter-content">
-                              <h2 class="section-title">
-                                 <span>Organized by:</span>
-                              </h2>
-                              <img src="images/gdg/LogoGDGABHorizontal.png" alt="GDG Android Bolivia" class="img-fluid"></br></br>
-                              <img src="images/gdg/Kotlin_Logo_Horizontal.png" alt="Kotlin La Paz" class="img-fluid">
+                     <div class="ts-map-tabs">
+                        <ul class="nav" role="tablist">
+                           <li class="nav-item">
+                              <a class="nav-link active" href="#place" role="tab" data-toggle="tab">Meeting place</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#date" role="tab" data-toggle="tab">Date and Time</a>
+                           </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content direction-tabs">
+                           <div role="tabpanel" class="tab-pane active" id="place">
+                              <div class="direction-tabs-content">
+                                 <h3>Casa Municipal de la Cultura Franz Tamayo - Teatro Modesta Sanjinés, La Paz, Bolivia</h3>
+                                 <p class="derecttion-vanue">
+                                    Av. Mariscal Santa Cruz<br />
+                                    Esquina Potosí, La Paz (Frente a la Iglesia San Francisco)<br>
+                                 </p>
+                              </div>
+                           </div>
+                           <div role="tabpanel" class="tab-pane fade" id="date">
+                              <div class="direction-tabs-content">
+                                 <h3>Sábado 24 de Agosto de 2019</h3>
+                                 <p class="derecttion-vanue">
+                                    From 09:00 to 15:00
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+
+                  </div>
+                  <div class="col-lg-6 offset-lg-1">
+                     <div class="ts-map">
+                        <div class="mapouter">
+                           <div class="gmap_canvas">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1912.7975659459964!2d-68.13738084301907!3d-16.49602594627004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3baf94ea67663a1!2sCasa+Municipal+de+la+Cultura+Franz+Tamayo!5e0!3m2!1ses!2sbo!4v1564873593093!5m2!1ses!2sbo" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                            </div>
                         </div>
                      </div>
@@ -822,59 +1268,92 @@
             </div>
          </section>
 
-         <footer class="ts-footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-8 mx-auto">
-                     <div class="ts-footer-social text-center mb-30">
-                        <ul>
-                           <li>
-                              <a class="ts-footer-social-link" href="https://www.facebook.com/GDGAndroidBolivia/"><i class="fa fa-facebook"></i></a>
-                           </li>
-                           <li>
-                              <a class="ts-footer-social-link" href="https://twitter.com/GDGAndroidBo"><i class="fa fa-twitter"></i></a>
-                           </li>
-                           <li>
-                              <a class="ts-footer-social-link" href="https://www.meetup.com/es-ES/GDGAndroidBolivia"><i class="fa fa-meetup"></i></a>
-                           </li>
-                        </ul>
+         <div class="footer-area">
+            <section class="ts-book-seat" style="background-image: url(images/gdg/bg-book.png)">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-8 mx-auto">
+                        <div class="book-seat-content text-center mb-70">
+                           <h2 class="section-title">
+                              <span>¿Qué esperas?</span>
+                              Separa tu cupo
+                           </h2>
+                           <a href="#" class="btn">Registro</a>
+                        </div>
                      </div>
-                     <!-- <div class="footer-menu text-center mb-25">
-                        <ul>
-                           <li><a href="#">About Eventime</a></li>
-                           <li><a href="#">Blog</a></li>
-                           <li><a href="#">Contact</a></li>
-                           <li><a href="#">Tickets</a></li>
-                           <li><a href="#">Venue</a></li>
-                        </ul>
-                     </div> -->
-                     <div class="copyright-text text-center">
-                        <p>Based on <a href="https://github.com/gdgcali/template_landing_events">GDG Cali Project</a> 2019 | GDG Android Bolivia</p>
+
+                  </div>
+                  <div class="ts-footer-newsletter">
+                     <div class="ts-newsletter">
+                        <div class="row">
+                           <div class="col-lg-4 mx-auto">
+                              <div class="ts-newsletter-content">
+                                 <h2 class="section-title">
+                                    <span>Organized by:</span>
+                                 </h2>
+                                 <img src="images/gdg/LogoGDGABHorizontal.png" alt="GDG Android Bolivia" class="img-fluid"></br></br>
+                                 <img src="images/gdg/Kotlin_Logo_Horizontal.png" alt="Kotlin La Paz" class="img-fluid">
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
-            </div>
-         </footer>
+            </section>
 
-         <div class="BackTo">
-            <a href="#" class="fa fa-angle-up" aria-hidden="true"></a>
+            <footer class="ts-footer">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-8 mx-auto">
+                        <div class="ts-footer-social text-center mb-30">
+                           <ul>
+                              <li>
+                                 <a class="ts-footer-social-link" href="https://www.facebook.com/GDGAndroidBolivia/" target="_blank"><i class="fa fa-facebook"></i></a>
+                              </li>
+                              <li>
+                                 <a class="ts-footer-social-link" href="https://twitter.com/GDGAndroidBo" target="_blank"><i class="fa fa-twitter"></i></a>
+                              </li>
+                              <li>
+                                 <a class="ts-footer-social-link" href="https://www.meetup.com/es-ES/GDGAndroidBolivia" target="_blank"><i class="fa fa-meetup"></i></a>
+                              </li>
+                           </ul>
+                        </div>
+                        <!-- <div class="footer-menu text-center mb-25">
+                           <ul>
+                              <li><a href="#">About Eventime</a></li>
+                              <li><a href="#">Blog</a></li>
+                              <li><a href="#">Contact</a></li>
+                              <li><a href="#">Tickets</a></li>
+                              <li><a href="#">Venue</a></li>
+                           </ul>
+                        </div> -->
+                        <div class="copyright-text text-center">
+                           <p>Based on <a href="https://github.com/gdgcali/template_landing_events" target="_blank">GDG Cali Project</a> 2019 | GDG Android Bolivia</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+
+            <div class="BackTo">
+               <a href="#" class="fa fa-angle-up" aria-hidden="true"></a>
+            </div>
          </div>
+
+         <script src="js/jquery.js"></script>
+
+         <script src="js/popper.min.js"></script>
+         <script src="js/bootstrap.min.js"></script>
+         <script src="js/jquery.appear.min.js"></script>
+         <script src="js/jquery.jCounter.js"></script>
+         <script src="js/jquery.magnific-popup.min.js"></script>
+         <script src="js/owl.carousel.min.js"></script>
+         <script src="js/wow.min.js"></script>
+         <script src="js/isotope.pkgd.min.js"></script>
+
+         <script src="js/main.js"></script>
+
       </div>
+   </body>
 
-      <script src="js/jquery.js"></script>
-
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/jquery.appear.min.js"></script>
-      <script src="js/jquery.jCounter.js"></script>
-      <script src="js/jquery.magnific-popup.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/wow.min.js"></script>
-      <script src="js/isotope.pkgd.min.js"></script>
-
-      <script src="js/main.js"></script>
-
-   </div>
-</body>
-
-</html>
+   </html>
