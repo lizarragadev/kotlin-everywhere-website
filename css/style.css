@@ -1252,6 +1252,272 @@ img.pull-right {
 /*==========================
      ts-experiences
 ===========================*/
+
+
+/*==========================
+     ts STAFF
+===========================*/
+
+/* Three columns side by side */
+.staffcolumn {
+  float: center;
+  justify-content: center;
+  width: 250px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 200px) {
+  .staffcolumn {
+    width: 100%;
+    
+  }
+}
+
+/* Add some shadows to create a card effect */
+.staffcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 20px;  
+
+  -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+
+    transition: all .5s ease-in-out;
+}
+
+.staffcard:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 20px;  
+  background: #fff582;
+  
+  -webkit-transform: scale(1.01);
+  -ms-transition: all 500ms ease-in;
+  -ms-transform: scale(1.01);   
+  -moz-transition: all 500ms ease-in;
+  -moz-transform: scale(1.01);
+
+  -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+/* Some left and right padding inside the container */
+.staffcontainer {
+  padding: 0 16px;
+}
+
+.staffrow {
+  justify-content: center;
+}
+
+/* Clear floats */
+.staffcontainer::after, .staffrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.stafftitle {
+  color: grey;
+}
+
+.staffbutton {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.staffbutton:hover {
+  background-color: #fff582;
+}
+
+
+
+
+
+
+
+
+.ts-staff {
+  padding-top: 120px;
+  padding-bottom: 0px;
+  position: relative;
+  overflow: hidden; }
+
+.ts-staff {
+  position: relative;
+  text-align: center;
+  margin-bottom: 55px; }
+  .ts-staff .staff-img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    overflow: hidden;
+    margin: auto auto 20px; }
+    .ts-staff .staff-img img {
+      width: 100%;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease; }
+    .ts-staff .staff-img:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: rgba(255, 245, 130, 0.5);
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      opacity: 0;
+      z-index: 1; }
+  .ts-staff .view-staff {
+    position: absolute;
+    left: 0;
+    top: 70%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    padding: 12px 0;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    opacity: 0;
+    z-index: 2; }
+  .ts-staff .ts-title {
+    margin-bottom: 5px; }
+    .ts-staff .ts-title a {
+      color: #222222; }
+  .ts-staff:hover .staff-img img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
+  .ts-staff:hover .staff-img:before {
+    opacity: 1; }
+  .ts-staff:hover .view-staff {
+    top: 50%;
+    opacity: 1; }
+  .ts-staff:hover .ts-title a {
+    color: #64d6f9; }
+  .ts-staff.white-text .ts-title a,
+  .ts-staff.white-text p {
+    color: #fff; }
+
+.staff-classic {
+  padding-top: 100px; }
+  .staff-classic .ts-staff {
+    margin-bottom: 60px; }
+    .staff-classic .ts-staff .staff-img {
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -ms-border-radius: 0; }
+    .staff-classic .ts-staff .ts-staff-info {
+      position: absolute;
+      right: 0;
+      bottom: -13px;
+      background: #fff;
+      z-index: 1;
+      width: 90%;
+      padding: 20px 0 10px; }
+      .staff-classic .ts-staff .ts-staff-info .ts-title {
+        margin-bottom: 0; }
+      .staff-classic .ts-staff .ts-staff-info p {
+        margin-bottom: 0; }
+
+.staff-shap img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 100px; }
+  .staff-shap img.shap1 {
+    top: 15%; }
+  .staff-shap img.shap2 {
+    bottom: 0;
+    left: auto;
+    top: 35%;
+    right: 0;
+    margin: auto; }
+  .staff-shap img.shap3 {
+    top: auto;
+    bottom: -25px;
+    margin: auto;
+    left: 6%; }
+
+.ts-staff-popup {
+  background: #fff;
+  padding: 0;
+  position: relative; }
+  .ts-staff-popup .ts-staff-popup-img img {
+    width: 100%; }
+  .ts-staff-popup .ts-staff-popup-content {
+    padding: 60px 40px; }
+    .ts-staff-popup .ts-staff-popup-content .ts-title {
+      margin-bottom: 10px; }
+    .ts-staff-popup .ts-staff-popup-content .staff-designation {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 10px; }
+    .ts-staff-popup .ts-staff-popup-content .company-logo {
+      margin-bottom: 15px; }
+    .ts-staff-popup .ts-staff-popup-content p {
+      margin-bottom: 25px; }
+    .ts-staff-popup .ts-staff-popup-content h4 {
+      font-size: 20px;
+      font-weight: 700; }
+    .ts-staff-popup .ts-staff-popup-content .session-name {
+      margin-bottom: 15px; }
+    .ts-staff-popup .ts-staff-popup-content .staff-session-info p {
+      color: #69D6F7;
+      margin-bottom: 10px; }
+    .ts-staff-popup .ts-staff-popup-content .ts-staff-social a {
+      color: #ababab;
+      margin-right: 18px; }
+      .ts-staff-popup .ts-staff-popup-content .ts-staff-social a:hover {
+        color: #69D6F7; }
+  .ts-staff-popup button.mfp-close {
+    font-size: 30px; }
+
+/*==========================
+     ts-experiences 
+===========================*/
+
 .ts-experiences {
   padding: 0;
   overflow: hidden;
